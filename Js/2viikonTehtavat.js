@@ -86,14 +86,14 @@ function jarjesta()
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
     {
-      document.write("Voit ajaa polkupyörää");
+      document.write("Saat ajaa polkupyörää");
     }
     else if(age < 18)
     {
-      document.write("Voit ajaa mopoa");
+      document.write("Saat ajaa mopoa");
     }
     else {
-      document.write("Voit ajaa autoa");
+      document.write("Saat ajaa autoa");
     }
   }
   function kaanna()
