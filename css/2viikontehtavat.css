@@ -1,9 +1,8 @@
 .body
 {
-  widith: auto;
+  width: auto;
   height: 100%;
-  background-color: lightgray
-  background-image: url'image/code-background.jpg'
+  background-image: url('/image/code-background.jpg');
 }
 .article
 {
