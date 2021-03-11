@@ -1,9 +1,9 @@
 function jarjesta()
 {
   var luku1, luku2, luku3;
-  luku1 = parseInt(document.getElementById('ensimmainen').value);
-  luku2 = parseInt(document.getElementById('toinen').value);
-  luku3 = parseInt(document.getElementById('kolmas').value);
+  luku1 = parseInt(document.getElementById('first').value);
+  luku2 = parseInt(document.getElementById('second').value);
+  luku3 = parseInt(document.getElementById('third').value);
   document.write("Annoit luvut: " + luku1 + ' ' + luku2 + ' ' + luku3 + "<br>");
   if(luku1 < luku2 && luku1 < luku3)
   {
