@@ -13,6 +13,7 @@
   padding: 50px;
   border-radius: 15px;
   font-family: verdana;
+  color: white;
 }
 .footer
 {
@@ -20,17 +21,17 @@
   text-align: center;
 }
 #one{
-  background-color: lightblue;
+  background-color: black;
 }
 #two{
-  background-color: pink;
+  background-color: black;
 }
 #tree{
-    background-color: yellow;
+    background-color: black;
 }
 #four{
-    background-color: brown;
+    background-color: black;
 }
 #five{
-    background-color: green;
+    background-color: black;
 }
