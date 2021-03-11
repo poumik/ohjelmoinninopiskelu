@@ -4,7 +4,7 @@ function jarjesta()
   luku1 = parseInt(document.getElementById('first').value);
   luku2 = parseInt(document.getElementById('second').value);
   luku3 = parseInt(document.getElementById('third').value);
-  document.write("Annoit luvut: " + luku1 + ' ' + luku2 + ' ' + luku3 + "<br>");
+  alert("Annoit luvut: " + luku1 + ' ' + luku2 + ' ' + luku3 + "<br>");
   if(luku1 < luku2 && luku1 < luku3)
   {
     if(luku2 < luku3)
@@ -30,10 +30,10 @@ function jarjesta()
     {
       if(luku1 < luku2)
       {
-        alert("Lukujen järjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+        alert("Lukujen järjestys on: " + luku3 + ' ' + luku1 + ' ' + luku2);
       }
       else {
-        alert("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+        alert("Lukujen järjestys on: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
       }
     }
