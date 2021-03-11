@@ -71,13 +71,13 @@ function jarjestaNumerot()
   {
     var arvo;
     arvo = parseInt(document.getElementById('luku').value);
-    document.write("Antamasi luku: " + arvo);
+    alert("Antamasi luku: " + arvo);
     if(arvo%2 == 0)
     {
-      document.write("<br>Antamasi luku on parillinen");
+      alert("<br>Antamasi luku on parillinen");
     }
     else {
-      document.write("<br>Antamasi luku on pariton");
+      alert("<br>Antamasi luku on pariton");
     }
   }
   function ajoOikeus()
