@@ -71,7 +71,6 @@ function jarjestaNumerot()
   {
     var arvo;
     arvo = parseInt(document.getElementById('luku').value);
-    alert("Antamasi luku: " + arvo);
     if(arvo%2 == 0)
     {
       alert("<br>Antamasi luku on parillinen");
