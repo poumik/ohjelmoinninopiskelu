@@ -95,7 +95,7 @@ function jarjestaNumerot()
   }
   function kaantaja()
   {
-    var lang = document.getElementById('kieli').value;
+    var lang = document.getElementById('language').value;
     if(lang == 'en')
     {
       alert("Hello world!");
