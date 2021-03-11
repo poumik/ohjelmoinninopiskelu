@@ -4,7 +4,6 @@ function jarjesta()
   luku1 = parseInt(document.getElementById('first').value);
   luku2 = parseInt(document.getElementById('second').value);
   luku3 = parseInt(document.getElementById('third').value);
-  alert("Annoit luvut: " + luku1 + ' ' + luku2 + ' ' + luku3 + "<br>");
   if(luku1 < luku2 && luku1 < luku3)
   {
     if(luku2 < luku3)
