@@ -4,6 +4,7 @@
   height: 100%;
   background-image: url('code-background.jpg');
   background-size: cover;
+  background-attachment: fixed; 
 }
 .article
 {
