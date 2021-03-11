@@ -1,24 +1,29 @@
+.page
+{
+  widith: auto;
+  height: 100%;
+  background-color: lightgray
+}
 .article
 {
   width: 500px;
   padding: 10px;
   margin: 10px;
   margin-right: 10px;
-  background-color: lightgray;
   float:left;
 }
 #one{
-  background-color: blue;
+  background-color: lightblue;
 }
 #two{
-  background-color: #FFCCCC;
+  background-color: pink;
 }
 #tree{
-    background-color: #FFFF99;
+    background-color: yellow;
 }
 #four{
-    background-color: #B3FFB3;
+    background-color: brown;
 }
 #five{
-    background-color: #B3D1FF;
+    background-color: green;
 }
