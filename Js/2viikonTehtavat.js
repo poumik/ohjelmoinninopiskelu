@@ -86,7 +86,7 @@ function jarjesta()
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
     {
-      document.write("Voit ajaa polkupyÃ¶rÃ¤Ã¤");
+      document.write("Voit ajaa polkupyörää");
     }
     else if(age < 18)
     {
