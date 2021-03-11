@@ -1,4 +1,4 @@
-function jarjesta()
+function jarjestaNumerot()
 {
   var luku1, luku2, luku3;
   luku1 = parseInt(document.getElementById('first').value);
@@ -37,7 +37,7 @@ function jarjesta()
       }
     }
   }
-  function etsiSuurin()
+  function suurinLuku()
   {
     var l1, l2, l3, l4, l5, suurin;
     l1 = parseInt(document.getElementById('luku1').value);
@@ -80,7 +80,7 @@ function jarjesta()
       document.write("<br>Antamasi luku on pariton");
     }
   }
-  function ajoneuvo()
+  function ajoOikeus()
   {
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
@@ -95,7 +95,7 @@ function jarjesta()
       document.write("Saat ajaa autoa");
     }
   }
-  function kaanna()
+  function kaantaja()
   {
     var lang = document.getElementById('kieli').value;
     if(lang == 'en')
