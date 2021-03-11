@@ -73,10 +73,10 @@ function jarjestaNumerot()
     arvo = parseInt(document.getElementById('luku').value);
     if(arvo%2 == 0)
     {
-      alert("<br>Antamasi luku on parillinen");
+      alert("Antamasi luku on parillinen");
     }
     else {
-      alert("<br>Antamasi luku on pariton");
+      alert("Antamasi luku on pariton");
     }
   }
   function ajoOikeus()
