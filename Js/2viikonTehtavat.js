@@ -64,8 +64,7 @@ function jarjestaNumerot()
     else {
       suurin = l1;
     }
-    document.write("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5);
-    document.write("<br>Suurin niistÃ¤ on: " + suurin);
+    alert("Suurin luku on: " + suurin);
   }
   function paritonParillinen()
   {
@@ -84,14 +83,14 @@ function jarjestaNumerot()
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
     {
-      document.write("Saat ajaa polkupyörää");
+      alert("Saat ajaa polkupyörää");
     }
     else if(age < 18)
     {
-      document.write("Saat ajaa mopoa");
+      alert("Saat ajaa mopoa");
     }
     else {
-      document.write("Saat ajaa autoa");
+      alert("Saat ajaa autoa");
     }
   }
   function kaantaja()
@@ -99,13 +98,13 @@ function jarjestaNumerot()
     var lang = document.getElementById('kieli').value;
     if(lang == 'en')
     {
-      document.write("Hello world!");
+      alert("Hello world!");
     }
     else if(lang == 'sw')
     {
-      document.write("Hej världen!");
+      alert("Hej världen!");
     }
     else {
-      document.write("Hola Mundo!");
+      alert("Hola Mundo!");
     }
   }
