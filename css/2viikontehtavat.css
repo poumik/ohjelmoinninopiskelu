@@ -12,6 +12,10 @@
   margin-right: 10px;
   float:left;
 }
+.footer
+{
+  background-color: gray;
+}
 #one{
   background-color: lightblue;
 }
