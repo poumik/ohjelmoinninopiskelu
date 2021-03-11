@@ -6,10 +6,11 @@
 }
 .article
 {
-  width: 500px;
-  padding: 10px;
-  margin: 10px;
-  margin-right: 10px;
+  width: auto;
+  height: 100%
+  padding: 5px;
+  margin: 5px;
+  margin-right: 1px;
   float:left;
 }
 .footer
