@@ -16,7 +16,7 @@ function muutaSalasanaksi()
   var salasana = "<p>";
   for(var j = 0; j < ksana.length; j++)
   {
-    salasana += ksana[j] + 'Ã–';
+    salasana += ksana[j] + 'Ö';
   }
   salasana += "</p>";
   document.getElementById('salasana').innerHTML = salasana;
