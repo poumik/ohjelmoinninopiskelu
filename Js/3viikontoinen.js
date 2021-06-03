@@ -20,11 +20,11 @@ function laskePisteet()
         pisteet++;
         break;
       case 'o':
-      case 'Ã¤':
+      case 'ä':
       case 'k':
       case 'l':
       case 'O':
-      case 'Ã„':
+      case 'Ä':
       case 'K':
       case 'L':
         pisteet+=2;
@@ -49,9 +49,9 @@ function laskePisteet()
       case 'V':
         pisteet+=4;
         break;
-      case 'Ã¶':
+      case 'ö':
+      case 'Ö':
       case 'd':
-      case 'Ã–':
       case 'D':
         pisteet+=7;
         break;
