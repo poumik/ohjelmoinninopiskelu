@@ -1,168 +1,77 @@
-function tulostaParilliset()
-{
-  var karvo = parseInt(document.getElementById('pluku').value);
-  var jono = "<p>";
-  for(var i = 2; i <= karvo; i= i+2)
-  {
-    jono+=i;
-    jono+=" ";
+//Ehtolauseita1
+function annaLuku() {
+luku = document.getElementById("luku").value;
+  if ( luku < 0 ) {
+    document.getElementById('vastaus1').innerHTML = "Antamasi luku " + luku + " on negatiivinen!";
+  }else {
+    document.getElementById('vastaus1').innerHTML = "Antamasi luku " + luku + " on positiivinen!";
   }
-  jono+="</p>";
-    document.getElementById('parilliset').innerHTML = jono;
 }
-function muutaSalasanaksi()
-{
-  var ksana = document.getElementById('ksana').value;
-  var salasana = "<p>";
-  for(var j = 0; j < ksana.length; j++)
-  {
-    salasana += ksana[j] + 'Ã–';
-  }
-  salasana += "</p>";
-  document.getElementById('salasana').innerHTML = salasana;
-}
-function tarkistaKirjain()
-{
-  var annettuSana = document.getElementById('tsana').value;
-  var vastaus = 'ei ole';
-  for(var k = 0; k < annettuSana.length; k++)
-  {
-    if(annettuSana[k] == 'Ã¶' || annettuSana[k] == 'Ã–')
-    {
-      vastaus = 'on';
+//Ehtolauseita2
+function viikonPaiva() {
+nro = document.getElementById("nro").value;
+var vastaus = " ";
+  if (nro > 7) {
+    alert("Anna numero väliltä 1-7!")
+  }else {
+    switch(nro) {
+      case "1":
+      vastaus = "Maanantai";
+      break;
+      case "2":
+      vastaus = "Tiistai";
+      break;
+      case "3":
+      vastaus = "Keskiviikko";
+      break;
+      case "4":
+      vastaus = "Torstai";
+      break;
+      case "5":
+      vastaus = "Perjantai";
+      break;
+      case "6":
+      vastaus = "Lauantai";
+      break;
+      default:
+      vastaus ="Sunnuntai"
+      break;
     }
   }
-  document.getElementById('vastaus').innerHTML = '<p>' + vastaus + '</p>';
+    document.getElementById("vastaus2").innerHTML = "Antamasi numero on: " + vastaus + "!";
 }
-function laskeKertoma()
-{
-  var kerLuku = document.getElementById('kertoma').value;
-  var laskettu = 1;
-  for(var z = 1; z <= kerLuku; z++)
-  {
-    laskettu*=z;
-  }
-  document.getElementById('kertomaVastaus').innerHTML = '<p>Luvun ' + kerLuku + ' kertoma on '+laskettu + '</p>';
-}
-function hipHeijaa()
-{
-  var tuloste = '';
-  for(var y = 1; y <= 100; y++)
-  {
-    if(y%3==0 && y%5==0)
-    {
-      tuloste+='Hip Heijaa ';
-    }
-    else if(y%5 == 0)
-    {
-      tuloste+='Heijaa ';
-    }
-    else if(y%3 == 0)
-    {
-      tuloste+='Hip ';
-    }
-    else {
-      tuloste+=y+' ';
-    }
-    document.getElementById('lukujenTulostus').innerHTML = tuloste;
+//Ehto2lauseita3
+function vuosiluku() {
+var luku;
+  luku = document.getElementById("vuosi").value;
+  if (luku % 4 == 0 && luku % 100 != 0) {
+    document.getElementById("vastaus3").innerHTML = "Vuosi on karkausvuosi!"
+  }else if (luku % 400 == 0) {
+    document.getElementById("vastaus3").innerHTML = "Vuosi on karkausvuosi!"
+  }else {
+    document.getElementById("vastaus3").innerHTML = "Vuosi ei ole karkausvuosi!"
   }
 }
-function ekatKymmenen()
-{
-  var kym = '<p>';
-  for(var e = 1; e <=10; e++)
-  {
-    kym += e + ' ';
-  }
-  kym += '</p>';
-  document.getElementById('lukujenTulostus10').innerHTML = kym;
+//Ehto2lauseita4
+function annaSummat() {
+var luku1, luku2, luku3, luku4, luku5, summa, keskiarvo;
+  luku1 = parseInt(document.getElementById('luku1').value);
+  luku2 = parseInt(document.getElementById('luku2').value);
+  luku3 = parseInt(document.getElementById('luku3').value);
+  luku4 = parseInt(document.getElementById('luku4').value);
+  luku5 = parseInt(document.getElementById('luku5').value);
+  summa = luku1+luku2+luku3+luku4+luku5;
+  keskiarvo = summa / 5;
+    document.getElementById("vastaus4").innerHTML = "Antamasi lukujen summa on: " + summa + " ja lukujen keskiarvo on: " + keskiarvo + ".";
 }
-function yhteen()
-{
-  yhteensa = 0;
-  for(var y = 1; y <=10; y++)
-  {
-    yhteensa += y;
+//Ehto2lauseita5
+function lauseMuuttuja() {
+  number1 = document.getElementById('number1').value;
+var luku;
+var lause = "";
+var x;
+  for (x = 1; x < 11; x++) {
+    lause += number1 + " x " + x + " = " + number1 * x + "\</br>" + "\</br>";
   }
-  document.getElementById('lukujenTulostusY').innerHTML = '<p>'+ yhteensa + '</p>';
-}
-function potenssi()
-{
-  var koro = document.getElementById('kor').value;
-  var pote = document.getElementById('pot').value;
-  yht = koro;
-  for(var p = 1; p < pote; p++)
-  {
-    yht *= koro;
-  }
-  document.getElementById('lukujenTulostusP').innerHTML = '<p>' + yht + '</p>';
-}
-function etsiSuurinPienin()
-{
-  var taulu = [], temp;
-  for(var x = 0; x < 5; x++)
-  {
-    temp = document.getElementById('taulukko['+x+']').value;
-    temp = parseInt(temp);
-    taulu.push(temp);
-    //alert(taulu);
-  }
-  taulu = taulu.sort((a,b) => a-b);
-  document.getElementById('lukujenTulostusT').innerHTML = '<p>Pienin luku: ' + taulu[0] + ' ja suurin luku: '+ taulu[taulu.length-1];
-}
-function muokkaaSalasana()
-{
-  var pw = '';
-  var eka, toka;
-  pw = document.getElementById('salis').value;
-  alert(pw);
-  var taulu = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v', 'x', 'y', 'z', 'Ã¥', 'Ã¤', 'Ã¶', 'w'];
-  var temp = [];
-  var lop='';
-  for(var s = 0; s < pw.length; s++)
-  {
-    eka = pw[s];
-    //alert[pw];
-    //alert[eka];
-    temp.push(eka);
-    //alert(eka);
-    var lisa = Math.floor(Math.random()*taulu.length);
-    toka = taulu[lisa];
-    temp.push(toka);
-    //alert(toka);
-  }
-  lop = temp.join('');
-  document.getElementById('lukujenTulostusS').innerHTML = lop;
-}
-function llisettomat()
-{
-  var nro1, nro2, palku, ralku, psumma=0, rsumma=0, pluvut='', rluvut='';
-  nro1 = parseInt(document.getElementById('pnro').value);
-  nro2 = document.getElementById('inro').value;
-  if(nro1%2 == 0)
-  {
-    palku = nro1;
-  }
-  else {
-    palku = nro1+1;
-  }
-  for(var b = palku; b<=nro2; b+=2)
-  {
-    pluvut += b + ' ';
-    psumma += b;
-    //alert(pluvut + ' ' + psumma);
-  }
-  if(nro1%2 == 0)
-  {
-    ralku = nro1+1;
-  }
-  else {
-    ralku = nro1;
-  }
-  for(var r = ralku; r<=nro2; r+=2)
-  {
-    rluvut += r + ' ';
-    rsumma += r;
-  }
-  document.getElementById('lukujenTulostusPari').innerHTML = '<p>Parilliset numerot: ' + pluvut +' ja niiden summa: ' + psumma + '</p><p>Parittomat luvut: ' + rluvut + ' ja niiden summa: '+ rsumma + '</p>';
+  document.getElementById("vastaus5").innerHTML = lause;
 }
