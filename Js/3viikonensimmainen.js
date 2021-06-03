@@ -27,7 +27,7 @@ function tarkistaKirjain()
   var vastaus = 'ei ole';
   for(var k = 0; k < annettuSana.length; k++)
   {
-    if(annettuSana[k] == 'Ã¶' || annettuSana[k] == 'Ã–')
+    if(annettuSana[k] == 'Ö' || annettuSana[k] == 'ö')
     {
       vastaus = 'on';
     }
